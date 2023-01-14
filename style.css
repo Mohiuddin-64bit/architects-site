@@ -10,6 +10,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -71,7 +72,7 @@ nav ul li a {
   gap: 33px;
   margin: 0 auto;
 
-  
+
 }
 
 .brand h1 {
@@ -89,7 +90,7 @@ nav ul li a {
   color: var(--gray);
 }
 
-.brand button {
+.primary-btn {
   width: 180px;
   height: 64px;
   color: white;
@@ -98,39 +99,124 @@ nav ul li a {
   border: none;
   padding: 20px 24px;
 }
-.brand img{
+
+.brand img {
   margin-bottom: 45px;
 
 }
+
+/* About One Style */
+
+.container {
+  width: 1300px;
+  display: flex;
+  margin: 85px auto;
+
+
+}
+
+.about-one {
+  display: flex;
+  align-items: center;
+  gap: 73px;
+
+}
+
+.about-one-imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+  border-radius: 8px;
+}
+
+.about-one-desc h1 {
+  font-weight: 700;
+  font-size: 45px;
+
+  line-height: 53px;
+}
+
+.about-one-desc p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--gray);
+  padding: 32px 0;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 /* Media Query Style */
 @media screen and (max-width: 480px) {
-  nav{
-    flex-direction: column;
+  header{
+    height: 970px;
   }
-  nav ul{
+  nav {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  nav ul {
     flex-direction: column;
     gap: 20px;
     margin-top: 20px;
     font-size: 25px;
   }
-  .brand{
+  .brand {
     width: 370px;
   }
-  .brand h1{
+
+  .brand h1 {
     font-size: 30px;
     line-height: 30px;
   }
-  .brand button{
+
+  .brand button {
     padding: 5px 10px;
     width: 100px;
     height: 44px;
   }
-  .brand img{
+
+  .brand img {
     width: 350px;
     border-radius: 15px;
   }
+  .container{
+    width: 100%;
+  }
+  .about-one{
+    display: grid;
+    grid-template-columns: repeat(1, 1fe);
+    width: 400px;
+  }
+  .about-one-imgs{
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 18px;
+  }
+  .about-one-desc{
+    width: 370px;
+    text-align: center;
+  }
 }
+
+
+/* Media Query END */

@@ -32,6 +32,7 @@ nav {
   max-width: 1440px;
   margin: 0 auto;
   padding-top: 50px;
+  margin-bottom: 102px;
 }
 
 nav h1 {
@@ -57,7 +58,79 @@ nav ul li a {
   font-size: 18px;
   line-height: 26px;
 }
+
 /* Navbar Style END */
 
 /* Brand Style Start */
 
+.brand {
+  width: 862px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 33px;
+  margin: 0 auto;
+
+  
+}
+
+.brand h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+}
+
+.brand p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--gray);
+}
+
+.brand button {
+  width: 180px;
+  height: 64px;
+  color: white;
+  background-color: var(--orange);
+  border-radius: 8px;
+  border: none;
+  padding: 20px 24px;
+}
+.brand img{
+  margin-bottom: 45px;
+
+}
+
+
+
+
+/* Media Query Style */
+@media screen and (max-width: 480px) {
+  nav{
+    flex-direction: column;
+  }
+  nav ul{
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .brand{
+    width: 370px;
+  }
+  .brand h1{
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .brand button{
+    padding: 5px 10px;
+    width: 100px;
+    height: 44px;
+  }
+  .brand img{
+    width: 350px;
+    border-radius: 15px;
+  }
+}

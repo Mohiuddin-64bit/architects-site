@@ -144,7 +144,80 @@ nav ul li a {
   padding: 32px 0;
 }
 
-.hide {
+/* About two style Start */
+
+.about-two-container {
+  width: 1440px;
+  height: 1200px;
+  margin: 130px auto;
+}
+
+.about-two {
+  display: flex;
+  gap: 54px;
+}
+
+.about-two-header {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  width: 400px;
+  color: var(--dark);
+  margin-bottom: 24px;
+}
+
+.about-two-wraper {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--gray);
+  margin-bottom: 30px;
+}
+
+.card-container {
+
+}
+
+.about-card {
+  margin-bottom: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 30px 43px 30px 30px;
+}
+
+.about-card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--dark);
+  padding-bottom: 5px;
+}
+.card-img{
+  position: relative;
+}
+.second-btn{
+  color: white;
+  background-color: var(--orange);
+  border-radius: 8px;
+  border: none;
+  padding: 60px;
+  font-size: 23px;
+}
+.overlay{
+  position: absolute;
+  z-index: 50;
+  top: 86%;
+  left: -40px;
+
+}
+.about-card-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--gray);
+}
+.hide{
   display: none;
 }
 
@@ -165,11 +238,25 @@ nav ul li a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media Query Style */
 @media screen and (max-width: 480px) {
-  header{
+  /* responsive header section  */
+  header {
     height: 970px;
   }
+
   nav {
     flex-direction: column;
     margin-bottom: 30px;
@@ -181,6 +268,8 @@ nav ul li a {
     margin-top: 20px;
     font-size: 25px;
   }
+  /* Responsive Brand Section */
+
   .brand {
     width: 370px;
   }
@@ -200,21 +289,55 @@ nav ul li a {
     width: 350px;
     border-radius: 15px;
   }
-  .container{
+  /* Responsive About One Section  */
+  .container {
     width: 100%;
   }
-  .about-one{
+
+  .about-one {
     display: grid;
     grid-template-columns: repeat(1, 1fe);
     width: 400px;
   }
-  .about-one-imgs{
+
+  .about-one-imgs {
     grid-template-columns: repeat(1, 1fr);
     margin-left: 18px;
   }
-  .about-one-desc{
+
+  .about-one-desc {
     width: 370px;
     text-align: center;
+  }
+/* responsive About Two Section */
+
+  .about-two{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .about-two-container{
+    width: 370px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-two-header{
+    font-size: 30px;
+    width: 365px;
+  }
+  .about-two-desc{
+    width: 365px;
+  }
+  .card-img img{
+    width: 350px;
+  }
+  .overlay{
+    left: 1%;
+    top: 88%;
+  }
+  .second-btn{
+    padding: 10px;
   }
 }
 

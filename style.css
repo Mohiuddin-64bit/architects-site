@@ -261,8 +261,13 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+  cursor: pointer;
 }
-
+.box:hover{
+  background-color: var(--orange);
+  transition: .2s all ease;
+  transform: scale(1.10);
+}
 .box h1 {
   padding: 8px 0;
   font-weight: 600;
@@ -303,7 +308,42 @@ nav ul li a {
   display: flex;
   filter: grayscale(100%);
   justify-content: space-between;
-  margin-bottom: 80px;
+  margin-bottom: 10px;
+}
+/* Subscription Section Style */
+
+.subscription{
+  width: 1200px;
+  height: 200px;
+  margin: 0 auto 90px;
+  background-color: var(--gray);
+  border-radius: 10px;
+  padding: 30px 0;
+}
+.subscription h1{
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.subscription form{
+  text-align: center;
+  margin-top: 20px;
+}
+.subscription form input{
+  padding: 20px 100px 20px 10px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+}
+.subs-btn{
+  padding: 20px 30px 20px;
+  right: 3px;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  background-color: var(--orange);
 }
 
 /* footer Section Style */
@@ -315,6 +355,7 @@ footer {
   margin: 0 auto;
   position: relative;
 }
+
 .footer-contant p{
   position: absolute;
   top: 50%;
@@ -449,17 +490,18 @@ footer {
   }
 
   .overlay {
-    left: 1%;
-    top: 88%;
+    left: 27%;
+    top: 100%;
   }
 
   .second-btn {
-    padding: 10px;
+    padding: 10px 30px;
+    margin-top: 50px;
   }
 
   /* Facts Section */
   .facts {
-    margin-top: 850px;
+    margin-top: 950px;
     width: 300px;
   }
 
@@ -488,6 +530,29 @@ footer {
     width: 200px;
     margin-left: 47px;
   }
+  /* Subscription style */
+  .subscription{
+    width: 370px;
+  }
+  .subscription form{
+    width: 350px; 
+  }
+  .subscription form h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .subscription form input{
+    padding: 20px 80px 20px 10px;
+    border-radius: 10px;
+  }
+  .subs-btn{
+    padding: 10px 20px 10px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto 0;
+    background-color: var(--orange);
+  }
+  /* Footer Section style */
   footer{
     width: 100%;
   }

@@ -398,7 +398,7 @@ footer {
 
 
 /* Media Query Style */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
 
   /* responsive header section  */
   header {

@@ -10,7 +10,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body {
@@ -148,7 +148,7 @@ nav ul li a {
 
 .about-two-container {
   width: 1440px;
-  height: 1200px;
+  height: 1054px;
   margin: 130px auto;
 }
 
@@ -159,6 +159,8 @@ nav ul li a {
 
 .about-two-header {
   font-weight: 700;
+  border-left: 3px solid var(--orange);
+  margin-left: 9px;
   font-size: 45px;
   line-height: 53px;
   width: 400px;
@@ -172,10 +174,6 @@ nav ul li a {
   line-height: 26px;
   color: var(--gray);
   margin-bottom: 30px;
-}
-
-.card-container {
-
 }
 
 .about-card {
@@ -193,10 +191,12 @@ nav ul li a {
   color: var(--dark);
   padding-bottom: 5px;
 }
-.card-img{
+
+.card-img {
   position: relative;
 }
-.second-btn{
+
+.second-btn {
   color: white;
   background-color: var(--orange);
   border-radius: 8px;
@@ -204,22 +204,77 @@ nav ul li a {
   padding: 60px;
   font-size: 23px;
 }
-.overlay{
+
+.overlay {
   position: absolute;
   z-index: 50;
   top: 86%;
   left: -40px;
 
 }
+
 .about-card-desc {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: var(--gray);
 }
-.hide{
+
+.hide {
   display: none;
 }
+
+/* Facts Section Start */
+.facts {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.facts-details h1 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  margin-bottom: 24px;
+}
+
+.facts-details p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 542px;
+  color: var(--gray);
+}
+
+.facts-boxs {
+  display: flex;
+  width: 1340px;
+  margin-top: 100px;
+  justify-content: space-around;
+}
+
+.box {
+  border: 1px solid var(--orange);
+  width: 241.83px;
+  height: 241.83px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.box h1 {
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 53px;
+}
+
+
+
+
+
+
 
 
 
@@ -252,6 +307,7 @@ nav ul li a {
 
 /* Media Query Style */
 @media screen and (max-width: 480px) {
+
   /* responsive header section  */
   header {
     height: 970px;
@@ -268,6 +324,7 @@ nav ul li a {
     margin-top: 20px;
     font-size: 25px;
   }
+
   /* Responsive Brand Section */
 
   .brand {
@@ -289,6 +346,7 @@ nav ul li a {
     width: 350px;
     border-radius: 15px;
   }
+
   /* Responsive About One Section  */
   .container {
     width: 100%;
@@ -309,36 +367,62 @@ nav ul li a {
     width: 370px;
     text-align: center;
   }
-/* responsive About Two Section */
 
-  .about-two{
+  /* responsive About Two Section */
+
+  .about-two {
     display: flex;
     flex-direction: column;
 
+
   }
-  .about-two-container{
+
+  .about-two-container {
     width: 370px;
     text-align: center;
     display: flex;
     flex-direction: column;
   }
-  .about-two-header{
+
+  .about-two-header {
     font-size: 30px;
+    width: 360px;
+  }
+
+  .about-two-desc {
     width: 365px;
   }
-  .about-two-desc{
-    width: 365px;
-  }
-  .card-img img{
+
+  .card-img img {
     width: 350px;
   }
-  .overlay{
+
+  .overlay {
     left: 1%;
     top: 88%;
   }
-  .second-btn{
+
+  .second-btn {
     padding: 10px;
   }
+
+  /* Facts Section */
+  .facts {
+    margin-top: 850px;
+    width: 300px;
+  }
+
+  .facts-details p {
+    width: 300px;
+  }
+
+  .facts-boxs {
+    flex-direction: column;
+    width: 300px;
+    margin-left: 30px;
+    gap: 20px;
+  }
+
 }
 
 
